@@ -1,6 +1,6 @@
-
 from telegram.ext import *
 import os
+import time
 import re
 from pytube import YouTube
 
@@ -49,6 +49,23 @@ def download_command(update, context):
     print(os.getcwd())
     video_file = open(path,"rb")
     update.message.reply_video(video=video_file)
+    time.sleep(5)
+
+    try:
+    # Attempt to delete the file
+        os.remove(path)
+        print(f"File '{path}' has been deleted.")
+    except FileNotFoundError:
+        print(f"File '{path}' not found.")
+    except PermissionError:
+        print(f"You don't have permission to delete '{path}'.")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+
+
+
+
 
 
 
@@ -56,7 +73,7 @@ def download_command(update, context):
 # Define the main function
 def main():
     # Replace 'YOUR_TOKEN' with your actual Telegram Bot API token
-    token = '6313033538:AAHbc_bPGZRYPt06j-iesaVxo03YWkwVSL8'
+    token = os.environ.get("TOKEN")
     updater = Updater(token)
 
     # Get the dispatcher to register handlers
