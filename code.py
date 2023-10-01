@@ -49,7 +49,7 @@ def get_video_size(video_path):
 #_____________________________Function to upload video to google drive________________________________________________________________
 def upload_to_gdrive(title, file_path):
     # Path to your service account JSON key file
-    service_account_file = "/work/uploader_service_account.json"
+    service_account_file = os.environ.get("uploader_service_account.json")
     scopes = ['https://www.googleapis.com/auth/drive']
 
     # Authenticate using service account credentials
