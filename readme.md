@@ -36,7 +36,7 @@ This repository contains a Telegram bot for downloading YouTube videos and uploa
 
 4. **Run the bot**:
     ```bash
-    python bot.py
+    python code.py
     ```
 
 ## Usage
