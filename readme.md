@@ -34,23 +34,23 @@ This repository contains a Telegram bot for downloading YouTube videos and uploa
      ```
 
 
-4. **Activate the virtual environment**
+3. **Activate the virtual environment**
    
     ```bash
     venv\scripts\activate ```
 
 
-6. **Install dependencies**:
+4. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
     
-7. **Set up environment variables**:
+5. **Set up environment variables**:
     - `TOKEN`: Your Telegram bot token.
     - `uploader_service_account.json`: Path to your Google Service Account JSON file.
     - `DRIVE_FOLDER_ID`: Google Drive folder ID where videos will be uploaded.
 
-5. **Run the bot**:
+6. **Run the bot**:
     ```bash
     python code.py
     ```
