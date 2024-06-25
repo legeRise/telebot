@@ -29,7 +29,9 @@ This repository contains a Telegram bot for downloading YouTube videos and uploa
 
 2. **Create a virtual environment**
    
-    ```bash python -m venv venv ```
+    ```bash
+    python -m venv venv
+     ```
 
 
 4. **Activate the virtual environment**
