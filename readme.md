@@ -37,8 +37,8 @@ This repository contains a Telegram bot for downloading YouTube videos and uploa
 3. **Activate the virtual environment**
    
     ```bash
-    venv\scripts\activate ```
-
+    venv\scripts\activate
+    ```
 
 4. **Install dependencies**:
     ```bash
