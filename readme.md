@@ -20,8 +20,11 @@ This repository contains a Telegram bot for downloading YouTube videos and uploa
 
 1. **Clone the repository**:
     ```bash
-    git clone [https://github.com/legeRise/telebot.git]
-    cd telebot
+    git clone https://github.com/legeRise/telebot.git
+    ```
+
+   ```bash
+     cd telebot
     ```
 
 2. **Install dependencies**:
